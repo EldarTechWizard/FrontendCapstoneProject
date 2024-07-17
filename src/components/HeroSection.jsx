@@ -1,19 +1,21 @@
+import restaurantImage from "../Assets/restauranfood.jpg";
+
 function HeroSection() {
   return (
-    <section>
+    <section className="hero-section">
       <article>
-        <div>
+        <div className="banner-article">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque
-            aspernatur provident autem eum ratione quibusdam maiores sequi
-            possimus exercitationem corporis inventore excepturi repudiandae
-            ipsa odit officiis, non mollitia qui?
+            We are a family owned Mediterranean restaurantImagefocused on
+            traditional recipes served with a modern twist.
           </p>
-          <button></button>
+          <button>Reserve a Table</button>
         </div>
-        <img src="" alt="" />
+        <div className="banner-image">
+          <img src={restaurantImage} alt="" />
+        </div>
       </article>
     </section>
   );
