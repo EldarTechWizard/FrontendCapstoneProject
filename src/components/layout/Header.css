@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 50px;
+}
+nav ul li {
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+}

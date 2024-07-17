@@ -1,0 +1,73 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  background-color: #495e57;
+  margin: 2em 0;
+}
+
+.hero-section article {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 14em;
+}
+
+.hero-section div {
+  width: 40%;
+  height: 100%;
+}
+
+.banner-article h1 {
+  padding-top: 15px;
+  font-size: 36px;
+  color: #c3a510;
+}
+
+.banner-article h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.banner-article p {
+  padding-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.banner-article button {
+  margin-top: 1em;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #f4ce14;
+  color: black;
+  font-weight: bold;
+  padding: 8px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.banner-image {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.banner-image img {
+  width: 220px;
+  height: 250px;
+  border-radius: 20px;
+
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-price h2 {
+  font-size: 16px;
+}

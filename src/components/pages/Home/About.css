@@ -1,0 +1,35 @@
+.about-section {
+  margin: 4em 0;
+}
+
+.about-section article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 60%;
+}
+.about-section div {
+  width: 45%;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  color: #c3a510;
+}
+
+.about-section h2 {
+  color: #495e57;
+}
+
+.about-section p {
+  color: #495e57;
+  padding: 30px 0;
+}
+
+.about-section img {
+  width: 400px;
+  height: 250px;
+  border-radius: 25px;
+  margin: 10px 0;
+}

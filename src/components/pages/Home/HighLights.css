@@ -1,0 +1,72 @@
+.highlight-section {
+  width: 60%;
+  margin: auto;
+  margin-top: 6em;
+}
+
+.highligh-title {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2em 0;
+}
+
+.highligh-title h2 {
+  margin-left: 30px;
+  font-size: 36px;
+}
+
+.highligh-title button {
+  margin-right: 30px;
+
+  margin-top: 1em;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #f4ce14;
+  color: black;
+  font-weight: bold;
+  padding: 8px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.highligh-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.highligh-container img {
+  width: 100%;
+  height: 170px;
+}
+
+.highlight-section article {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 30%;
+
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+  background-color: #edefee;
+}
+
+.highlight-section article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.highlight-section article > div > p {
+  padding: 2em 0;
+  height: 5em;
+  font-size: 14px;
+  color: #4f635d;
+}
+
+.highlight-section article > div > h3 {
+  padding-top: 2em;
+  font-size: 16px;
+}
