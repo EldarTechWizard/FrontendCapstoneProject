@@ -1,6 +1,8 @@
 import restaurantImage from "./Assets/restauranfood.jpg";
 import "./HeroSection.css";
 
+import { Link } from "react-router-dom";
+
 function HeroSection() {
   return (
     <section className="hero-section">
@@ -12,7 +14,9 @@ function HeroSection() {
             We are a family owned Mediterranean restaurantImagefocused on
             traditional recipes served with a modern twist.
           </p>
-          <button>Reserve a Table</button>
+          <button>
+            <Link to="/Reservations">Reserve a Table</Link>
+          </button>
         </div>
         <div className="banner-image">
           <img src={restaurantImage} alt="" />

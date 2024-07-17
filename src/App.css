@@ -12,3 +12,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  margin-top: 1em;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #f4ce14;
+  color: black;
+  font-weight: bold;
+  padding: 8px 15px;
+  outline: none;
+  cursor: pointer;
+}

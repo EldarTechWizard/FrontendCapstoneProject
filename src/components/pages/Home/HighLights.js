@@ -2,6 +2,7 @@ import greekSalad from "./Assets/greek salad.jpg";
 import brushetta from "./Assets/brushetta.jpg";
 import lemonDesser from "./Assets/lemon dessert.jpg";
 import "./HighLights.css";
+import { Link } from "react-router-dom";
 
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +12,9 @@ function Highlights() {
     <section className="highlight-section">
       <div className="highligh-title">
         <h2>This weeks specials!</h2>
-        <button>Online menu</button>
+        <button>
+          <Link to="/Menu">Online menu</Link>
+        </button>
       </div>
       <div className="highligh-container">
         <article>
