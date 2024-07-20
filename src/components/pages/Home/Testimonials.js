@@ -7,54 +7,55 @@ import "./Testimonials.css";
 import { faStar, faStarHalfStroke } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const customers = [
+  {
+    name: "Sindre Fs",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consectetur, ab, asperiores quaerat dolore quae iusto",
+    image: avatar1,
+  },
+  {
+    name: "Natalia Wilson",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus  recusandae iste eligendi quis distinctio sapiente ullam",
+    image: avatar2,
+  },
+  {
+    name: "Andrew Dick",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magni quibusdam sint officia quod error laudantium sapiente.",
+    image: avatar3,
+  },
+  {
+    name: "Andrea Piacquadio",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate excepturi impedit! Exercitationem dicta voluptate estnemo",
+    image: avatar4,
+  },
+];
+
+function Card({ customer }) {
+  return (
+    <article className="card-testimonial">
+      <img src={customer.image} alt="" />
+      <h4>{customer.name}</h4>
+
+      <blockquote>
+        <p>"{customer.description}"</p>
+      </blockquote>
+    </article>
+  );
+}
+
 function Testimonials() {
   return (
     <section className="testimonial-section">
-      <div>
+      <div className="container grid">
         <h1>What people say about us</h1>
-        <div className="testimonial-articles">
-          <article>
-            <div>
-              <img src={avatar1} alt="" />
-              <p>Sindre Fs</p>
-            </div>
-            <p>
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum consectetur, ab, asperiores quaerat dolore quae iusto"
-            </p>
-          </article>
-          <article>
-            <div>
-              <img src={avatar2} alt="" />
-              <p>Natalia Wilson</p>
-            </div>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              recusandae iste eligendi quis distinctio sapiente ullam"
-            </p>
-          </article>
-          <article>
-            <div>
-              <img src={avatar3} alt="" />
-              <p>Andrew Dick</p>
-            </div>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quisquam magni quibusdam sint officia quod error laudantium
-              sapiente."
-            </p>
-          </article>
-          <article>
-            <div>
-              <img src={avatar4} alt="" />
-              <p>Andrea Piacquadio</p>
-            </div>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              voluptate excepturi impedit! Exercitationem dicta voluptate est
-              nemo"
-            </p>
-          </article>
+        <div className="testimonial-articles grid">
+          {customers.map((customer) => (
+            <Card customer={customer} />
+          ))}
         </div>
       </div>
     </section>

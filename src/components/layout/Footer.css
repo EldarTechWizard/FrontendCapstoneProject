@@ -3,29 +3,42 @@ footer {
   color: white;
 }
 
-footer > div {
-  display: flex;
-  width: 60%;
+.footer-content {
+  padding: 3rem 0;
+  grid-template-columns: auto auto auto auto;
   margin: auto;
-  justify-content: space-between;
-  padding: 2em 0;
 }
 
-footer li {
-  padding: 2px 0;
+.footer-content li {
+  padding: 0.3rem 0;
+  text-transform: capitalize;
 }
 
 footer img {
-  width: 100px;
-  height: 130px;
+  width: 6rem;
 }
 
 footer h3 {
   margin: 8px 0;
+  text-transform: uppercase;
 }
 
 .social-icons-list ul {
   display: flex;
   margin-top: 3px;
   gap: 20px;
+}
+
+@media (max-width: 964px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }

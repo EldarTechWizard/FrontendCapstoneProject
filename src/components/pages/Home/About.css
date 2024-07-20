@@ -1,20 +1,14 @@
 .about-section {
-  margin: 4em 0;
 }
 
-.about-section article {
-  display: flex;
-  flex-direction: row;
+.about-article {
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  margin: auto;
-  width: 60%;
-}
-.about-section div {
-  width: 45%;
+  gap: 4rem;
+  padding: 5rem 0;
 }
 
 .about-section h1 {
-  font-size: 36px;
   color: #c3a510;
 }
 
@@ -24,12 +18,24 @@
 
 .about-section p {
   color: #495e57;
-  padding: 30px 0;
+  padding: 2rem 0;
+  line-height: 1.5;
 }
 
-.about-section img {
-  width: 400px;
-  height: 250px;
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-images img {
   border-radius: 25px;
-  margin: 10px 0;
+}
+
+@media (max-width: 964px) {
+  .about-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+  }
 }

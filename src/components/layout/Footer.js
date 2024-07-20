@@ -1,6 +1,7 @@
 import logoWhite from "./Assets/logo-white.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import pages from "../../utils/pages";
 
 import {
   faFacebook,
@@ -11,34 +12,23 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const nav = Array.from(pages.values()).filter((page) => page.nav);
+
 function Footer() {
   return (
     <footer>
-      <div>
+      <div className="footer-content container grid">
         <img src={logoWhite} alt="" />
-        <div>
+        <nav>
           <h3>Site map</h3>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">About</Link>
-            </li>
-            <li>
-              <Link to="/Menu">Menu</Link>
-            </li>
-            <li>
-              <Link to="/Reservations">Reservations</Link>
-            </li>
-            <li>
-              <Link to="/Order-online">Order Online</Link>
-            </li>
-            <li>
-              <Link to="/Login">Login</Link>
-            </li>
+            {nav.map((page, index) => (
+              <li key={index}>
+                <Link to={page.path}>{page.name}</Link>
+              </li>
+            ))}
           </ul>
-        </div>
+        </nav>
         <div>
           <h3>Contact</h3>
           <ul>

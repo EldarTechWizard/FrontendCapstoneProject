@@ -19,13 +19,14 @@ function App() {
         <Route path="/Login" element={<UnderConstruction />} />
         <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
 
 /*
 
-<Footer />
+
 */
 
 export default App;

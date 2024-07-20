@@ -4,9 +4,9 @@ import "./About.css";
 
 function About() {
   return (
-    <section className="about-section">
-      <article>
-        <div>
+    <section className="about-section container">
+      <article className="about-article grid">
+        <div className="about-info">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>
@@ -25,7 +25,7 @@ function About() {
             ratione voluptatem sequi nesciunt.
           </p>
         </div>
-        <div>
+        <div className="about-images">
           <img src={MarioAndAdrianA} alt="" />
           <img src={MarioAndAdrianB} alt="" />
         </div>
