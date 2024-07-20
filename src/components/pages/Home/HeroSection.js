@@ -6,21 +6,19 @@ import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <section className="hero-section">
-      <article>
+      <article className="container grid">
         <div className="banner-article">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>
-            We are a family owned Mediterranean restaurantImagefocused on
+            We are a family owned Mediterranean restaurant focused on
             traditional recipes served with a modern twist.
           </p>
-          <button>
-            <Link to="/Reservations">Reserve a Table</Link>
-          </button>
+          <Link className="button-primary" to="/Reservations">
+            Reserve a Table
+          </Link>
         </div>
-        <div className="banner-image">
-          <img src={restaurantImage} alt="" />
-        </div>
+        <img className="hero-image" src={restaurantImage} alt="" />
       </article>
     </section>
   );

@@ -1,72 +1,91 @@
 .highlight-section {
-  width: 60%;
-  margin: auto;
-  margin-top: 6em;
+  margin-top: 6rem;
 }
 
-.highligh-title {
+.highlight-title {
   display: flex;
   justify-content: space-between;
-
-  margin: 2em 0;
+  margin-bottom: 2rem;
 }
 
-.highligh-title h2 {
-  margin-left: 30px;
-  font-size: 36px;
+.highlight-title h2 {
+  font-size: 2.5rem;
+  color: #495e57;
 }
 
-.highligh-title button {
-  margin-right: 30px;
-
-  margin-top: 1em;
-  border-radius: 10px;
-  font-size: 12px;
-  background-color: #f4ce14;
-  color: black;
-  font-weight: bold;
-  padding: 8px 15px;
-  outline: none;
-  cursor: pointer;
-}
-
-.highligh-container {
+.highlight-title a {
   display: flex;
+  align-items: center;
+}
+
+.highlight-container {
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
+  gap: 1.15rem;
 }
 
-.highligh-container img {
-  width: 100%;
-  height: 170px;
-}
-
-.highlight-section article {
+.meal-card {
   display: flex;
   flex-direction: column;
-
-  max-width: 30%;
-
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  overflow: hidden;
   background-color: #edefee;
+  border-radius: 1.5rem;
+  min-height: 29.25rem;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
 }
 
-.highlight-section article > div {
+.meal-card-img img {
+  height: 12.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.meal-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.25rem;
+}
+
+.meal-card-header h2 {
+  font-size: 1.15rem;
+  color: #495e5b;
+}
+
+.meal-card-header p {
+  color: #ee9972;
+  font-weight: bold;
+}
+
+.meal-card-footer {
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0rem 1.25rem;
 }
 
-.highlight-section article > div > p {
-  padding: 2em 0;
-  height: 5em;
-  font-size: 14px;
-  color: #4f635d;
+.meal-card-footer p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495e57;
 }
 
-.highlight-section article > div > h3 {
-  padding-top: 2em;
-  font-size: 16px;
+.meal-card-footer h3 {
+  font-size: 1rem;
+  color: #495e57;
+}
+
+@media (max-width: 962px) {
+  .highlight-container {
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 692px) {
+  .highlight-container {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+  }
 }

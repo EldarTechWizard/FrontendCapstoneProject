@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./components/layout/Header";
 import Main from "./components/pages/Home/index";
 import Footer from "./components/layout/Footer";
@@ -20,9 +19,13 @@ function App() {
         <Route path="/Login" element={<UnderConstruction />} />
         <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
+
+/*
+
+<Footer />
+*/
 
 export default App;
