@@ -1,0 +1,103 @@
+.menu-section {
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem auto;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-section.hidden {
+  opacity: 0;
+}
+
+.dish-card {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  background-color: #edefee;
+  color: #495e5b;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.dish-info {
+  padding: 1rem;
+}
+
+.dish-info p {
+  line-height: 1.5;
+}
+
+.dish-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.dish-title span {
+  align-self: center;
+  color: #ee9972;
+}
+
+.dish-title h2 {
+  font-size: 1.2rem;
+}
+
+.nav-filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #495e5b;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  overflow: hidden;
+  color: white;
+}
+
+.nav-filter label {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav-filter label:hover {
+  background-color: #f4ce14;
+  color: #495e5b;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.selected {
+  background-color: #f4ce14;
+  color: #495e5b;
+}
+
+@media (max-width: 964px) {
+  .menu-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .menu-card {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .nav-filter {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav-filter label {
+    font-size: 0.8rem;
+  }
+}

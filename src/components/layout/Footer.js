@@ -42,22 +42,38 @@ function Footer() {
           <h3>Connect with us</h3>
           <ul>
             <li>
-              <a href="www.facebook.com">
+              <a
+                href={`https://www.facebook.com`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
             </li>
             <li>
-              <a href="www.instagram.com">
+              <a
+                href={`https://www.instagram.com`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
             </li>
             <li>
-              <a href="www.twitter.com">
+              <a
+                href={`https://www.twitter.com`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
             </li>
             <li>
-              <a href="www.youtube.com">
+              <a
+                href={`https://www.youtube.com`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faYoutube} size="lg" />
               </a>
             </li>
