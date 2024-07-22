@@ -3,13 +3,6 @@
   margin: 3rem auto;
   column-gap: 2rem;
   row-gap: 1.5rem;
-
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.menu-section.hidden {
-  opacity: 0;
 }
 
 .dish-card {

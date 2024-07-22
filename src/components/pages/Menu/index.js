@@ -156,22 +156,17 @@ const categories = ["all", "Starters", "Main Courses", "Desserts", "Beverages"];
 
 function Menu() {
   const [selectedOption, setSelectedOption] = useState("all");
-  const [isVisible, setIsVisible] = useState(true);
 
   const handleChange = useCallback((event) => {
     setSelectedOption(event.target.value);
   }, []);
 
   const filteredMenu = useMemo(() => {
-    return selectedOption === "all"
-      ? menu
-      : menu.filter((dish) => dish.category === selectedOption);
-  }, [selectedOption]);
-
-  useEffect(() => {
-    setIsVisible(false);
-    const timer = setTimeout(() => setIsVisible(true), 300); // Match the CSS transition duration
-    return () => clearTimeout(timer);
+    const filtered =
+      selectedOption === "all"
+        ? menu
+        : menu.filter((dish) => dish.category === selectedOption);
+    return filtered.sort((a, b) => a.name.localeCompare(b.name));
   }, [selectedOption]);
 
   return (
@@ -193,9 +188,7 @@ function Menu() {
         ))}
       </div>
 
-      <section
-        className={`menu-section container grid ${isVisible ? "" : "hidden"}`}
-      >
+      <section className={`menu-section container grid `}>
         {filteredMenu.map((dish) => (
           <article className="dish-card" key={dish.name}>
             <img src={dish.image} alt={dish.name} loading="lazy" />
